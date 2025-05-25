@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgroBit | Soluciones IoT para Agricultura</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 font-sans">
+<!-- HEADER DE AGROBIT -->
+<header class="bg-green-800 text-white shadow-md">
+  <div class="container mx-auto px-4 py-2 flex flex-wrap justify-between items-center">
+    <div class="flex items-center space-x-3">
+      <img src="imagenes/Gemini_Generated_Image_if34abif34abif34.png" alt="Logo AgroBit" class="h-20 w-20 object-contain">
+      <span class="text-2xl font-bold tracking-wide">🌿 AgroBit</span>
+      <span class="text-sm text-green-200 hidden sm:inline">Sensores y soluciones IoT para agricultura</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <div class="hidden sm:flex space-x-2">
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" class="h-5 w-5" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" class="h-5 w-5" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" class="h-5 w-5" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" class="h-5 w-5" alt="Instagram"></a>
+      </div>
+      <div>
+        <select class="bg-green-700 text-white p-1 rounded">
+          <option>Español</option>
+          <option>English</option>
+        </select>
+      </div>
+      <div class="relative">
+        <input type="text" placeholder="Buscar..." class="p-1 px-3 rounded text-black">
+        <button class="absolute right-1 top-1 text-gray-500">🔍</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENÚ PRINCIPAL -->
+<nav class="bg-green-900 text-white">
+  <div class="container mx-auto px-4 py-2 flex items-center space-x-6 text-sm font-semibold">
+    <button onclick="toggleSeccion('inicio')" class="hover:underline">Inicio</button>
+    <button onclick="toggleSeccion('empresa')" class="hover:underline">Empresa</button>
+    <button onclick="toggleSeccion('productos')" class="hover:underline">Productos</button>
+    <button onclick="toggleSeccion('segmentos')" class="hover:underline">Segmentos</button>
+    <button onclick="toggleSeccion('tienda')" class="hover:underline">Tienda</button>
+    <button onclick="toggleSeccion('servicios')" class="hover:underline">Servicios</button>
+    <a href="#" class="hover:underline">Noticias</a>
+    <a href="#" class="hover:underline">Contacto</a>
+    <a href="#" class="hover:underline">Soporte</a>
+    <a href="#" class="hover:underline">Blog</a>
+  </div>
+</nav>
+    
+  </nav>
+</header>
+
+<!-- SECCIÓN EMPRESA -->
+<!-- SECCIÓN EMPRESA con video a un lado -->
+<section id="empresa" class="hidden bg-white text-gray-800 container mx-auto p-6 mt-4 rounded shadow buscable">
+  <div class="grid md:grid-cols-2 gap-6 items-center">
+    
+    <!-- Texto -->
+    <div>
+      <h2 class="text-3xl font-bold text-green-800 mb-4">Sobre nosotros</h2>
+      <p class="mb-4">
+        En <strong>AgroBit IoT</strong>, nuestra misión es impulsar una revolución en la agricultura a través de la integración inteligente del Internet de las Cosas.
+      </p>
+      <p class="mb-4">
+        Creemos firmemente en un futuro donde la tecnología y la sostenibilidad se fusionan para optimizar la producción de alimentos, reducir el impacto ambiental
+        y empoderar a los agricultores.
+      </p>
+      <p>
+        Nuestra visión es ser líderes en soluciones IoT para la agricultura, brindando herramientas innovadoras y accesibles para decisiones más inteligentes y cultivos más eficientes.
+      </p>
+    </div>
+
+    <!-- Video -->
+    <div class="w-full h-full">
+      <video id="videoEmpresa" autoplay loop playsinline controls class="rounded shadow-lg w-full h-full object-cover">
+        <source src="imagenes/Vídeo sin título ‐ Hecho con Clipchamp (1).mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECCIÓN PRODUCTOS -->
+<section id="productos" class="hidden bg-white text-gray-800 container mx-auto p-6 mt-4 rounded shadow buscable">
+  <h2 class="text-3xl font-bold text-green-800 mb-6">Nuestros productos</h2>
+  <p class="mb-8">Explora nuestras soluciones organizadas por categorías: sensores, módulos de control y tecnología sostenible para una agricultura inteligente.</p>
+
+  <!-- Sensores de Humedad -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Sensores de Humedad</h3>
+    <p class="mb-4">Ofrecemos sensores de humedad del suelo de alta precisión, ideales para monitoreo en tiempo real. Puedes adquirirlos por separado o en kits completos con conectividad.</p>
+    <ul class="list-disc list-inside">
+      <li>Sensor capacitivo de humedad con salida analógica</li>
+      <li>Kit de monitoreo con sensor + módulo inalámbrico</li>
+      <li>Combo: 3 sensores + placa lectora + app móvil</li>
+    </ul>
+  </div>
+
+  <!-- Sensores de Temperatura -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Sensores de Temperatura</h3>
+    <p class="mb-4">Dispositivos ideales para medir la temperatura del ambiente y del suelo, con opciones digitales y resistencia al agua.</p>
+    <ul class="list-disc list-inside">
+      <li>DS18B20: sensor digital de temperatura para suelo</li>
+      <li>DHT11 y DHT22: temperatura + humedad ambiente</li>
+      <li>Combo con lectura y visualización en LCD</li>
+    </ul>
+  </div>
+
+  <!-- Centro de Control y Monitoreo -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Centro de Control y Monitoreo</h3>
+    <p class="mb-4">Dispositivo central que conecta y gestiona sensores, actuadores y la plataforma de nube AgroBit. Ideal para cultivos automatizados.</p>
+    <ul class="list-disc list-inside">
+      <li>AgriControl IoT: unidad principal con conectividad WiFi</li>
+      <li>Interfaces con relés, entradas analógicas y módulos expansibles</li>
+      <li>Compatible con paneles solares y sensores múltiples</li>
+    </ul>
+  </div>
+
+  <!-- Energías Renovables -->
+  <div class="mb-10">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Energías Renovables</h3>
+    <p class="mb-4">Sistemas de alimentación autónomos para zonas rurales sin acceso a red eléctrica.</p>
+    <ul class="list-disc list-inside">
+      <li>Paneles solares compactos 5W / 10W</li>
+      <li>Baterías recargables de larga duración</li>
+      <li>Controladores de carga para entornos agrícolas</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECCIÓN SEGMENTOS -->
+<!-- SECCIÓN SEGMENTOS DETALLADA -->
+<section id="segmentos" class="hidden bg-white text-gray-800 container mx-auto p-6 mt-4 rounded shadow buscable">
+  <h2 class="text-3xl font-bold text-green-800 mb-6">Nuestros segmentos</h2>
+
+  <!-- Campesinos y Agricultores -->
+  <div class="mb-8">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Campesinos y Agricultores</h3>
+    <p class="mb-2">Los pequeños y medianos productores agrícolas enfrentan desafíos diarios en el manejo eficiente del agua, la temperatura y la salud del cultivo. AgroBit proporciona soluciones accesibles y confiables para ayudarlos a mejorar su producción.</p>
+    <p>Contamos con una variedad de sensores de humedad, temperatura y exposición solar que permiten monitorear el estado del cultivo en tiempo real. Estos dispositivos facilitan el riego preciso, la prevención de enfermedades y el aumento del rendimiento, sin necesidad de conocimientos técnicos avanzados.</p>
+  </div>
+
+  <!-- Instituciones Educativas y de Investigación -->
+  <div class="mb-8">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Instituciones Educativas y de Investigación</h3>
+    <p class="mb-2">Este segmento está enfocado en universidades, colegios técnicos, centros de formación agrícola y grupos de investigación interesados en aplicar tecnología de punta en sus procesos educativos y científicos.</p>
+    <p>AgroBit ofrece kits didácticos con sensores personalizables, módulos programables y acceso a plataformas de visualización de datos. Estas herramientas permiten desarrollar proyectos de investigación, prototipos tecnológicos y experiencias prácticas en el aula.</p>
+  </div>
+
+  <!-- Empresas Agroindustriales -->
+  <div class="mb-8">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Empresas Agroindustriales</h3>
+    <p class="mb-2">Las grandes empresas del sector agroindustrial requieren soluciones integradas, escalables y con alta capacidad de procesamiento y monitoreo para cultivos extensivos o sistemas de producción complejos.</p>
+    <p>En AgroBit diseñamos sistemas a medida que permiten supervisar múltiples variables (clima, humedad, temperatura, presión, pH, entre otras) desde un solo panel de control. Integramos conectividad con la nube, almacenamiento de datos y análisis predictivo, garantizando trazabilidad y eficiencia en toda la operación agrícola.</p>
+  </div>
+</section>
+
+<!-- SECCIÓN TIENDA -->
+<section id="tienda" class="hidden bg-white text-gray-800 container mx-auto p-6 rounded shadow mt-2">
+  <h2 class="text-2xl font-bold text-green-800 mb-6">Tienda de AgroBit</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Producto 1 -->
+    <div class="border rounded p-4 shadow hover:shadow-lg transition">
+      <img src="imagenes/Imagen de WhatsApp 2025-05-11 a las 15.31.42_1e6557b2.jpg" alt="Sensor de Temperatura" class="w-full h-40 object-cover rounded">
+      <h3 class="text-lg font-semibold mt-2">Modulo de Temperatura y rayos UV</h3>
+      <p class="text-sm text-gray-600">Este dispositivo cuenta con la capacidad de medir temparatura y exposicion a los rayos uv, ademas cuenta con la capacidad de enviar datos y almacenarlos en la nube, cuenta con una bateria interna de larga duracion</p>
+      <p class="text-green-700 font-bold mt-1">$65.500</p>
+      <button class="mt-2 bg-green-700 hover:bg-green-800 text-white px-4 py-1 rounded">Agregar al carrito</button>
+    </div>
+    <!-- Producto 2 -->
+    <div class="border rounded p-4 shadow hover:shadow-lg transition">
+      <img src="imagenes/Imagen de WhatsApp 2025-05-11 a las 15.31.44_e9bc3469.jpg" alt="Sensor de Humedad" class="w-full h-40 object-cover rounded">
+      <h3 class="text-lg font-semibold mt-2">Placa Controladora De Temperatura</h3>
+      <p class="text-sm text-gray-600">Placa controladora de temperatura digital LED azul W1209, microtermostato, control electrónico de temperatura, 12 V DC, módulo de sensor con relé de un canal</p>
+      <p class="text-green-700 font-bold mt-1">$46.800</p>
+      <button class="mt-2 bg-green-700 hover:bg-green-800 text-white px-4 py-1 rounded">Agregar al carrito</button>
+    </div>
+    <!-- Producto 3 -->
+    <div class="border rounded p-4 shadow hover:shadow-lg transition">
+      <img src="imagenes/Imagen de WhatsApp 2025-05-11 a las 15.31.46_d9c446d5.jpg" alt="Kit de Riego" class="w-full h-40 object-cover rounded">
+      <h3 class="text-lg font-semibold mt-2">AgriControl IoT</h3>
+      <p class="text-sm text-gray-600">¡Potencia tu Cultivo con el Centro de Control Inteligente IoT!
+
+Lleva tu cultivo al siguiente nivel con este avanzado centro de control diseñado para la agricultura inteligente. Este sistema integrado recopila datos cruciales de tu entorno de cultivo, toma decisiones autónomas para mantener las condiciones óptimas y, además, te permite monitorear y analizar el rendimiento a través de la nube.</p>
+      <p class="text-green-700 font-bold mt-1">$150.000</p>
+      <button class="mt-2 bg-green-700 hover:bg-green-800 text-white px-4 py-1 rounded">Agregar al carrito</button>
+    </div>
+  </div>
+</section>
+<!-- SECCIÓN SERVICIOS -->
+<section id="servicios" class="hidden bg-white text-gray-800 container mx-auto p-6 mt-4 rounded shadow buscable">
+  <h2 class="text-3xl font-bold text-green-800 mb-6">Nuestros servicios</h2>
+
+  <!-- Consultoría tecnológica -->
+  <div class="mb-8">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Consultoría en Agricultura Inteligente</h3>
+    <p>Ofrecemos asesoría personalizada para integrar soluciones IoT en proyectos agrícolas. Desde la selección de sensores adecuados hasta el diseño de sistemas completos para automatización y monitoreo.</p>
+    <button class="mt-3 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded">Solicitar asesoría</button>
+  </div>
+
+  <!-- Instalación y soporte técnico -->
+  <div class="mb-8">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Instalación y Soporte Técnico</h3>
+    <p>Contamos con personal capacitado para la instalación de sensores, estaciones y centros de control en campo. Además, brindamos soporte remoto y mantenimiento preventivo de equipos.</p>
+    <button class="mt-3 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded">Agendar instalación</button>
+  </div>
+
+  <!-- Capacitación técnica -->
+  <div class="mb-8">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Capacitación Técnica</h3>
+    <p>Impartimos talleres y cursos sobre uso de sensores, plataformas de monitoreo y programación de módulos IoT, dirigidos a agricultores, docentes o estudiantes.</p>
+    <button class="mt-3 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded">Inscribirme</button>
+  </div>
+
+  <!-- Desarrollo de software personalizado -->
+  <div class="mb-8">
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Desarrollo de Software Personalizado</h3>
+    <p>Diseñamos aplicaciones a medida para visualizar, analizar y gestionar los datos de tu cultivo, con acceso web y móvil. También integramos nuestros dispositivos con sistemas existentes.</p>
+    <button class="mt-3 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded">Cotizar desarrollo</button>
+  </div>
+
+  <!-- Monitoreo remoto -->
+  <div>
+    <h3 class="text-2xl font-semibold text-green-700 mb-2">Monitoreo Remoto y Gestión en la Nube</h3>
+    <p>Con nuestra plataforma en la nube puedes acceder a los datos de tu cultivo desde cualquier lugar. Ofrecemos dashboards, alertas y reportes automáticos.</p>
+    <button class="mt-3 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded">Ver plataforma</button>
+  </div>
+</section>
+<!-- JS para alternar secciones -->
+<script>
+  function toggleSeccion(id) {
+    const secciones = ["inicio", "empresa", "productos", "segmentos", "tienda", "servicios", "resultados"];
+    secciones.forEach(sec => {
+      const el = document.getElementById(sec);
+      if (el) {
+        el.classList.add("hidden");
+
+        // Si estamos saliendo de la sección empresa, pausa el video
+        if (sec === "empresa") {
+          const video = document.getElementById("videoEmpresa");
+          if (video && !video.paused) {
+            video.pause();
+            video.currentTime = 0; // Opcional: reiniciar desde el principio
+          }
+        }
+      }
+    });
+
+    const activa = document.getElementById(id);
+    if (activa) activa.classList.remove("hidden");
+  }
+</script>
+
+<!-- Banner -->
+<section class="relative bg-cover bg-center text-white py-32"
+         style="background-image: url('imagenes/ChatGPT Image 11 may 2025, 05_00_08 p.m..png');">
+  <div class="absolute inset-0 bg-green-900 bg-opacity-60"></div>
+  <div class="relative z-10 text-center px-4">
+    <h2 class="text-8xl font-bold">¡Moderniza tu cultivo con tecnología IoT!</h2>
+    <p class="mt-4 text-lg">Soluciones inteligentes para optimizar tu producción agrícola</p>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-green-800 text-white text-center py-4 mt-10">
+  <p>&copy; 2025 AgroBit. Todos los derechos reservados.</p>
+        <h3 class="font-bold mb-2">Contacto</h3>
+      <p>Email: AgroBit@agrobit.com</p>
+      <p>Tel: +57 300 123 4567</p>
+      <p>Ubicación: Colombia-Bogotá</p>
+    </div>
+    <div>
+</footer>
+
+</body>
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573001234567?text=Hola%20AgroBit%2C%20quiero%20más%20información%20sobre%20sus%20productos" 
+   class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
+   target="_blank" aria-label="Chat en WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="h-6 w-6">
+</a>
+</html>
+
